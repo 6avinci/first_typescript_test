@@ -1,0 +1,8 @@
+1 - Dattelpalme
+2 - Holunder
+3 - Lilie
+4 - Magnolie
+5 - Maiglöckchen
+6 - Rose
+7 - Schilfgras
+8 - Wacholder

@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+}
+.logo {
+    height: 75px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.container {
+    padding-left: 200px;
+    padding-top: 45px;
+}
+.card {
+    min-height: 450px;
+    width: 550px;
+    background-color: #ffffff;
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    img {
+        margin-top: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 0px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px  rgba($color: #575757, $alpha: 0.35);
+    }
+    p {
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #575757;
+        font-size: 14px;
+    }
+    button {
+        background-color: #ffffff;
+        border: unset;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
+        height: 25px;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        &:first-child {
+            left: 0;
+        }
+        &:last-child {
+            right: 0;
+            border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+}
