@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FriendService } from '../friend.service';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-friendlist',
-  templateUrl: './friendlist.component.html',
-  styleUrls: ['./friendlist.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class FriendlistComponent implements OnInit {
-
-  /* names = [
+export class FriendService {
+  names = [
     'Dattelpalme',
     'Holunder',
     'Lilie',
@@ -30,7 +26,7 @@ export class FriendlistComponent implements OnInit {
   ];
 
 
-/*  descSmall = [
+    descSmall = [
     'Lebenszeit: ca. 150 Jahre',
     'Lebenszeit: ca. 100 Jahre',
     'Lebenszeit: ca. 2 Jahre',
@@ -39,11 +35,7 @@ export class FriendlistComponent implements OnInit {
     'Lebenszeit: ca. 5 Jahre',
     'Lebenszeit: ca. 7 jahre',
     'Lebenszeit: ca. 600 Jahre',
-  ]; */
+  ]; 
 
-  constructor(public fs:FriendService) { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() { }
 }
