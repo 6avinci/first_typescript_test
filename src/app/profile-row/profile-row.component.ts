@@ -10,6 +10,7 @@ export class ProfileRowComponent implements OnInit {
   @Input() usersm: string = '';
   @Input() imgsm: string = '';
   @Input() descsm: string = '';
+  @Input() canFollow = true;
 
   
 

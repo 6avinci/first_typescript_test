@@ -3,5 +3,5 @@
     <div class="user"><b>{{ usersm }}</b> <br />
     <span class="description">{{descsm}}</span>
 </div>
-<a (click)="fs.addFriend(usersm, descsm, imgsm)">Folgen</a>
+<a *ngIf="canFollow" (click)="fs.addFriend(usersm, descsm, imgsm); canFollow=false">Folgen</a>
 </div>
