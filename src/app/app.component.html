@@ -1,4 +1,12 @@
 <app-header></app-header>
+<div class="flexbox">
   <div class="container">
-    <app-usercard></app-usercard>
+    <app-friendlist></app-friendlist>
+    <app-usercard 
+    *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]" 
+    [img]="postImages[i]" 
+    [text]="postTexts[i]">
+    </app-usercard>
+    </div>
+    <app-proposals></app-proposals>
   </div>

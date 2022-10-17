@@ -1,0 +1,11 @@
+<app-profile-row 
+*ngFor="let s of [7]" 
+[imgsm]="imageSmall[s]" 
+[usersm]="textSmall[s]"
+[descsm]="descSmall[s]"></app-profile-row>
+<b>Freundesvorschläge</b><br /> <br />
+<app-profile-row
+*ngFor="let s of [0, 1, 2, 3, 4, 5, 6]" 
+[imgsm]="imageSmall[s]" 
+[usersm]="textSmall[s]"
+[descsm]="descSmall[s]"></app-profile-row>
