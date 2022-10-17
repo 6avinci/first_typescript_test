@@ -5,37 +5,22 @@ import { Injectable } from '@angular/core';
 })
 export class FriendService {
   names = [
-    'Dattelpalme',
-    'Holunder',
-    'Lilie',
-    'Magnolie',
-    'Maiglöckchen',
     'Rose',
-    'Schilfgras',
-    'Wacholder',
   ];
   images = [
-    'assets/img/user/1.jpg',
-    'assets/img/user/2.jpg',
-    'assets/img/user/3.jpg',
-    'assets/img/user/4.jpg',
-    'assets/img/user/5.jpg',
     'assets/img/user/6.jpg',
-    'assets/img/user/7.jpg',
-    'assets/img/user/8.jpg',
   ];
 
 
     descSmall = [
-    'Lebenszeit: ca. 150 Jahre',
-    'Lebenszeit: ca. 100 Jahre',
-    'Lebenszeit: ca. 2 Jahre',
-    'Lebenszeit: ca. 100 Jahre',
-    'Lebenszeit: ca. 7 Tage',
     'Lebenszeit: ca. 5 Jahre',
-    'Lebenszeit: ca. 7 jahre',
-    'Lebenszeit: ca. 600 Jahre',
   ]; 
 
   constructor() { }
+
+  addFriend(name:string, text:string, image:string) {
+    this.names.push (name);
+    this.descSmall.push (text);
+    this.images.push (image);
+  }
 }
