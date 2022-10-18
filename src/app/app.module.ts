@@ -8,6 +8,13 @@ import { UsercardComponent } from './usercard/usercard.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
 import { FriendlistComponent } from './friendlist/friendlist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatIconModule } from '@angular/material/icon';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +23,14 @@ import { FriendlistComponent } from './friendlist/friendlist.component';
     UsercardComponent,
     ProposalsComponent,
     ProfileRowComponent,
-    FriendlistComponent
+    FriendlistComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

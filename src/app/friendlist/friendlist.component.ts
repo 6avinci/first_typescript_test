@@ -8,7 +8,7 @@ import { FriendService } from '../friend.service';
 })
 export class FriendlistComponent implements OnInit {
 
-  /* names = [
+names = [
     'Dattelpalme',
     'Holunder',
     'Lilie',
@@ -30,7 +30,7 @@ export class FriendlistComponent implements OnInit {
   ];
 
 
-/*  descSmall = [
+  descSmall = [
     'Lebenszeit: ca. 150 Jahre',
     'Lebenszeit: ca. 100 Jahre',
     'Lebenszeit: ca. 2 Jahre',
@@ -39,7 +39,7 @@ export class FriendlistComponent implements OnInit {
     'Lebenszeit: ca. 5 Jahre',
     'Lebenszeit: ca. 7 jahre',
     'Lebenszeit: ca. 600 Jahre',
-  ]; */
+  ];
 
   constructor(public fs:FriendService) { }
 

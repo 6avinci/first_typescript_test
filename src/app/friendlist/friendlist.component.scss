@@ -1,8 +1,19 @@
 .friendrow {
+    align-items: center;
     display: flex;
+    overflow-x: scroll;
+    scrollbar-color: #6969dd #e0e0e0;
 }
+
+.friendrow::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
 .friend {
     img {
+        margin-left: 10px;
+        margin-right: 10px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -14,4 +25,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    .badge {
+        max-width: 1%;
+        min-width: 5px;
+        display: block;
+        margin-left: min(67%, 150px);
+        margin-right: min(45%, 30%);
+        }
+        .badge:hover {
+            cursor: pointer;
+        }
 }

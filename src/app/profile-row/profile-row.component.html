@@ -1,7 +1,7 @@
 <div class="profile-row">
     <img src="{{ imgsm }}">
     <div class="user"><b>{{ usersm }}</b> <br />
-    <span class="description">{{descsm}}</span>
+    <span class="description">{{ descsm }}</span>
 </div>
 <a *ngIf="canFollow" (click)="fs.addFriend(usersm, descsm, imgsm); canFollow=false">Folgen</a>
 </div>

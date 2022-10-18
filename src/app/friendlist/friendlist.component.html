@@ -5,6 +5,7 @@
     </div>
 
     <div class="friend" *ngFor="let name of fs.names; let i = index">
-        <img src="{{ fs.images[i] }}" title="{{ fs.descSmall[i] }}"> <br />{{ name }}
+        <button style="height: 7.5px;" matBadgeSize="large" matBadge="X" color="primary" class="badge" (click)="fs.deleteFriend(fs.names[i], fs.descSmall[i], fs.images[i])"></button>
+            <img src="{{ fs.images[i] }}" title="{{ fs.descSmall[i] }}"> <br />{{ name }}
     </div>
 </div>
