@@ -8,6 +8,7 @@ export class FriendService {
   images = Array();
   descSmall = Array(); 
 
+
   constructor() { }
 
     // addFriend('Peter', 'Hallo', '/assets/img/hamster/1.jpg')
@@ -17,8 +18,8 @@ export class FriendService {
     this.images.push (image);
   }
   deleteFriend(_name:any , _text:any, _image:any) {
-    this.names.pop ();
-    this.descSmall.pop ();
-    this.images.pop ()
+    this.names.splice(_name, 1);
+    this.descSmall.splice(_image, 1);
+    this.images.splice(_text, 1);
     }
 }
