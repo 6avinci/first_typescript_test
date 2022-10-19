@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FriendService } from '../friend.service';
-export class i { };
+export class i{};
 
 
 

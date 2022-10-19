@@ -19,8 +19,8 @@ export class FriendService {
     this.images.push (image);
   }
   deleteFriend(_name:any , _text:any, _image:any) {
-    this.names.splice(i, 1, 0);
-    this.descSmall.splice(i, 1, 0);
-    this.images.splice(i, 1, 0);
+    this.names.pop();
+    this.descSmall.pop();
+    this.images.pop();
     }
 }
