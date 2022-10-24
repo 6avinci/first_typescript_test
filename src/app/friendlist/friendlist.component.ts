@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/*import { from } from 'rxjs';*/
 import { FriendService } from '../friend.service';
-export class i {};
 
 
 @Component({
