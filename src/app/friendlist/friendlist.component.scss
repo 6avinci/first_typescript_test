@@ -10,7 +10,11 @@
     width: 4px;
     height: 4px;
 }
-
+#friend_center {
+    display: block;
+    margin-left: min(67%, 150px);
+    margin-right: min(45%, 30%);
+}
 .friend {
     img {
         margin-left: 10px;
