@@ -1,11 +1,10 @@
 <div class="padding-16 standardcard friendrow">
 
-    <div *ngIf="fs.images.length === 0">
+    <div  *ngIf="fs.images.length === 0">
         <b>Du hast keine Freunde 🐹</b>
     </div>
-
-    <div class="friend" *ngFor="let name of fs.names; let i = index">
-        <button style="height: 5px;" matBadgeSize="large" matBadge="X" color="secondary" class="badge" (click)="fs.deleteFriend(names[i], descSmall[i], images[i])"></button>
+        <div class="friend" *ngFor="let name of fs.names; let i = index">
+        <button style="height: 5px;" matBadgeSize="large" matBadge="X" color="secondary" class="badge" (click)="fs.names.splice(i, 1)" (click)="fs.images.splice(i, 1)" (click)="fs.descSmall.splice(i, 1)"></button>
             <img src="{{ fs.images[i] }}" title="{{ fs.descSmall[i] }}"> <br />{{ name }}
     </div>
 </div>

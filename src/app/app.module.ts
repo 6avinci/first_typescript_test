@@ -11,7 +11,7 @@ import { FriendlistComponent } from './friendlist/friendlist.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
-import { i } from './friendlist/friendlist.component';
+import { i, } from './friendlist/friendlist.component';
 
 
 
@@ -33,7 +33,7 @@ import { i } from './friendlist/friendlist.component';
     MatIconModule,
     MatBadgeModule,
   ],
-  providers: [i],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

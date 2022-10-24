@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+/*import { from } from 'rxjs';*/
 import { FriendService } from '../friend.service';
-export class i{};
-
+export class i {};
 
 
 @Component({
@@ -9,6 +9,8 @@ export class i{};
   templateUrl: './friendlist.component.html',
   styleUrls: ['./friendlist.component.scss']
 })
+
+
 export class FriendlistComponent implements OnInit {
 
 names = [

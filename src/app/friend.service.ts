@@ -1,6 +1,9 @@
 import { VariableBinding } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import { i, FriendlistComponent} from './friendlist/friendlist.component';
+import { FriendlistComponent } from './friendlist/friendlist.component';
+import { i } from './friendlist/friendlist.component';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +13,6 @@ export class FriendService {
   images = Array();
   descSmall = Array(); 
 
-
   constructor() { }
 
     addFriend(name:string, text:string, image:string) {
@@ -18,9 +20,9 @@ export class FriendService {
     this.descSmall.push (text);
     this.images.push (image);
   }
-  deleteFriend(_name:any , _text:any, _image:any) {
-    this.names.pop();
-    this.descSmall.pop();
-    this.images.pop();
-    }
+  /*deleteFriend(_name:string , _text:string, _image:string) {
+    this.names.splice;
+    this.descSmall.splice;
+    this.images.splice;
+    }*/
 }
