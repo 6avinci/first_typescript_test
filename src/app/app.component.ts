@@ -28,7 +28,16 @@ postImages = [
     'assets/img/user/7.jpg',
     'assets/img/user/8.jpg',
 ];
-
+postLinks = [
+  'profile1.html',
+  'profile2.html',
+  'profile3.html',
+  'profile4.html',
+  'profile5.html',
+  'profile6.html',
+  'profile7.html',
+  'profile8.html',
+];
 
   buttonClicked() {
     alert('Hallo, wie geght es dir?');

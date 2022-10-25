@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UsercardComponent implements OnInit {
   @Input() text: string = '';
   @Input() img: string = '';
+  @Input() link: string = '';
 
   constructor() { }
 
