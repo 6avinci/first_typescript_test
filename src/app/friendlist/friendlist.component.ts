@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FriendService } from '../friend.service';
 
 
@@ -11,6 +11,7 @@ import { FriendService } from '../friend.service';
 
 export class FriendlistComponent implements OnInit {
 
+  
 names = [
     'Dattelpalme',
     'Holunder',
