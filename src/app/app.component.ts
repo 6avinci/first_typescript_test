@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { FriendlistComponent } from './friendlist/friendlist.component';
+import { ModalService } from './modal.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  bodyText: string | undefined;
 
   postTexts = [
     'Ich bin eine Dattelpalme. Ich wachse üblicherweise in warmen Breitengraden und werfe gewöhnungsbedürftige Früchte ab.',
@@ -41,5 +44,16 @@ postLinks = [
 
   buttonClicked() {
     alert('Hallo, wie geght es dir?');
-  }
+  };
+  constructor(public modalService: ModalService) {}
+
+  ngOnInit() {
+    this.bodyText = "This text can be updated in modal1"  
+  };
+  openModal() {
+    this.modalService.open("null");
+  };
+  closeModal() {
+    this.modalService.close("null");
+  };
 }
