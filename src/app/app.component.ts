@@ -29,14 +29,14 @@ postImages = [
     'assets/img/user/8.jpg',
 ];
 postLinks = [
-  'profile1.html',
-  'profile2.html',
-  'profile3.html',
-  'profile4.html',
-  'profile5.html',
-  'profile6.html',
-  'profile7.html',
-  'profile8.html',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
 ];
 
   buttonClicked() {
