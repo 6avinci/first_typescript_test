@@ -1,4 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component,Inject, Input, OnInit } from '@angular/core';
+import { MatDialogModule, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+export interface DialogData {
+  animal: string;
+  name: string;
+}
+
 
 @Component({
   selector: 'app-usercard',
@@ -14,5 +20,4 @@ export class UsercardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

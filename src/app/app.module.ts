@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { FriendComponent } from './friend/friend.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
